@@ -1,0 +1,42 @@
+body {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-color: #0000aa;
+  color: lime;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: yellow;
+  text-shadow: 2px 2px red;
+  font-size: 48px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+marquee {
+  font-size: 24px;
+  color: cyan;
+  font-weight: bold;
+}
+
+a {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+.blink-text {
+  animation: blink 0.5s infinite;
+  color: red;
+}
+
+.glitter {
+  background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+}
