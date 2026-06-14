@@ -3,41 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WELCOME TO ridanXD MAIN PAGE</title>
+  <title>★ WELCOME TO RIDANXD'S ULTIMATE CYBER ZONE 2001 ★</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for Retro Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=VT323&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+  <!-- ================= BACKGROUND MUSIC ================= -->
   <audio id="bg-music" loop>
     <source src="assets/music/backsound.mp3" type="audio/mpeg">
   </audio>
-  <button id="music-btn">🎵</button>
 
-  <marquee behavior="alternate" scrollamount="10">🌟GET READY FOR VIEW FULL DOCUMENTATION OF ME🌟</marquee>
+  <!-- ================= HEADER (XP Luna Style Bar - Ultra 3D) ================= -->
+  <header class="xp-header-bar glossy-3d-blue">
+    <div class="header-logo-container">
+      <button id="menu-toggle-btn" class="xp-luna-green-btn">☰ start</button>
+      <div class="header-logo">
+        <span class="logo-icon">💾</span> ridanXD's Ultimate Y2K Web Zone v4.20
+      </div>
+    </div>
+    <div class="header-ticker">
+      <marquee behavior="alternate" scrollamount="6">🌟 WARNING: EXTREME HACKER LEVEL CODE INSIDE // PROCEED AT YOUR OWN RISK 🌟</marquee>
+    </div>
+  </header>
 
-  <h1>MY COOL PROJECT🚀</h1>
-  <p class="glitter">HAHAHAHA🎉</p>
+  <!-- ================= MAIN PAGE CONTAINER ================= -->
+  <div class="page-container">
+    
+    <!-- ================= SIDEBAR (WIDGET ZONE) ================= -->
+    <aside class="sidebar">
+      
+      <!-- User Profile Box -->
+      <div class="xp-group-box">
+        <div class="group-title">User Profile</div>
+        <div class="group-content text-center">
+          <div class="avatar-frame">😎</div>
+          <h3>ridanXD</h3>
+          <p class="blink-fast" style="color: red; font-weight: bold; text-shadow: 1px 1px 0px black;">[ONLINE & UNSTABLE]</p>
+          <div class="mood-warning-bar blink-fast">⚠️ MOOD CRITICAL ⚠️</div>
+        </div>
+      </div>
 
-  <img src="https://media.giphy.com/media/JUXGVpncYAU8NJ6BWz/giphy.gif" alt="Funny GIF">
-  <img src="https://media.giphy.com/media/l0MYEWpv7Ue0RFVaE/giphy.gif" alt="Fire">
+      <!-- Quick Navigation Directory (Scroll shortcuts) -->
+      <div class="xp-group-box">
+        <div class="group-title">System Directory</div>
+        <div class="group-content navigation-links">
+          <a href="#welcome-sec" class="xp-bevel-btn nav-link">💾 Welcome.exe</a>
+          <a href="#projects-sec" class="xp-bevel-btn nav-link">📁 Projects.bin</a>
+          <a href="#gallery-sec" class="xp-bevel-btn nav-link">🖼️ Gallery.bmp</a>
+          <a href="#notepad-sec" class="xp-bevel-btn nav-link">✏️ Notes.txt</a>
+          <a href="#guestbook-sec" class="xp-bevel-btn nav-link">💻 Guestbook.bat</a>
+          <a href="#utility-sec" class="xp-bevel-btn nav-link">⚙️ Hardware.sys</a>
+        </div>
+      </div>
 
-  <p class="blink-text">👉 CLICK HERE <a href="https://github.com/ridanXD/"> My Github </a> </p>
-  <h3> MY CURRICULUM VITAE IS <a href=""> HEREEEEE </a> </h3>
-  <h1> LOOK MY BEST PROJECT </h1>
-  <h3> 1. ASCII TEXT GENERATOR, For detail <a href = "https://github.com/ridanXD/ASCII-Text-Generator">Click here</a>
-  <h3> 2. Family Care[ON PROGRESS], For detail <a href=""> COMING SOON :p</a> </h3>
-  <h3> 3. Discrete Math Tools, For detail<a href = "https://github.com/ridanXD/DiscreteTOOLz"> Click Here </a></h3>
+      <!-- System Status Dashboard -->
+      <div class="xp-group-box">
+        <div class="group-title">Emotional Dashboard</div>
+        <div class="group-content stats-dashboard">
+          <div class="stat-row">
+            <span>Brain Overload:</span>
+            <span class="stat-val text-red">99.8%</span>
+          </div>
+          <div class="stat-row">
+            <span>Seblak Level:</span>
+            <span class="stat-val text-green">Optimal</span>
+          </div>
+          <div class="stat-row">
+            <span>Exam Phobia:</span>
+            <span class="stat-val text-yellow">100%</span>
+          </div>
+          <div class="stat-row">
+            <span>Spaghetti Engine:</span>
+            <span class="stat-val text-blue">Running</span>
+          </div>
+        </div>
+      </div>
 
-  <h2> HELL NAHHHH </h2>
+      <!-- Winamp Player Widget -->
+      <div class="xp-group-box winamp-box">
+        <div class="group-title">Winamp v2.80</div>
+        <div class="group-content winamp-theme">
+          <div class="winamp-display">
+            <div class="winamp-status">
+              <span id="winamp-song-title">ridanXD - backsound.mp3</span>
+            </div>
+            <div class="winamp-time" id="winamp-time-display">00:00</div>
+            <canvas id="winamp-visualizer" width="160" height="20"></canvas>
+          </div>
+          <div class="winamp-controls">
+            <button id="winamp-prev" class="winamp-btn">⏮</button>
+            <button id="winamp-play" class="winamp-btn active-btn">▶</button>
+            <button id="winamp-pause" class="winamp-btn">⏸</button>
+            <button id="winamp-stop" class="winamp-btn">⏹</button>
+            <button id="winamp-next" class="winamp-btn">⏭</button>
+          </div>
+          <div class="winamp-volume-bar">
+            <span>VOL</span>
+            <input type="range" id="winamp-volume" min="0" max="1" step="0.05" value="0.5">
+          </div>
+        </div>
+      </div>
 
-  <h1> I LOVE PHOTOGRAPHY!!</h1>
-  <H2>LET SEE MY GALLERY IN HERE <a href=""> OK I NEED A GOOD MOOD TO DO THIS PLS GET A F*K UP I WANNA GOING TO CAMPUSS FOR NOW </a> </H2>
+      <!-- Tamagotchi Pet Widget -->
+      <div class="xp-group-box">
+        <div class="group-title">RidanPet 1.0</div>
+        <div class="group-content pet-widget">
+          <div class="pet-screen">
+            <div id="pet-avatar">🦖</div>
+            <div id="pet-mood-bubble">Feed me!</div>
+          </div>
+          <div class="pet-stats">
+            <div>Cringe Level: <span id="pet-cringe-val">20%</span></div>
+            <div class="progress-bar-container">
+              <div id="pet-cringe-bar" class="progress-bar" style="width: 20%;"></div>
+            </div>
+          </div>
+          <div class="pet-actions">
+            <button class="xp-bevel-btn" onclick="feedPet('indomie')">🍜 Indomie</button>
+            <button class="xp-bevel-btn" onclick="feedPet('seblak')">🌶️ Seblak</button>
+            <button class="xp-bevel-btn" onclick="feedPet('kopi')">☕ Coffee</button>
+            <button class="xp-bevel-btn" onclick="petSleep()">🛌 Sleep</button>
+          </div>
+        </div>
+      </div>
 
-  <h3>ok, i will write a code more(if my mood all good)</h3>
-  
+      <!-- Visitor Counter -->
+      <div class="xp-group-box">
+        <div class="group-title">Web Traffic Stats</div>
+        <div class="group-content text-center">
+          <div class="visitor-counter">
+            <span>0</span><span>0</span><span>0</span><span>1</span><span>3</span><span>3</span><span>7</span>
+          </div>
+          <p style="font-size: 11px; margin-top: 5px; color: #555;">Best viewed in Netscape Navigator at 800x600</p>
+        </div>
+      </div>
 
-  <marquee direction="left" scrollamount="10"> WANNA DONATE? CLICK <a href = "">HERE</a> </marquee>
-  <marquee direction="right" scrollamount="5">🔥🔥🔥 MOST COOL PROJECT EVERYTIME🔥🔥🔥</marquee>
+      <!-- Vintage Web Badges -->
+      <div class="xp-group-box">
+        <div class="group-title">Net Credibility Badges</div>
+        <div class="group-content badges-grid">
+          <div class="badge-3d badge-blue">IE 6.0 OPTIMIZED</div>
+          <div class="badge-3d badge-gold">NETSCAPE OK</div>
+          <div class="badge-3d badge-green">NOTEPAD ENGINE</div>
+          <div class="badge-3d badge-magenta">SPAGHETTI CODE</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT AREA ================= -->
+    <main class="main-content">
+      
+      <!-- Welcome Hero Box -->
+      <section id="welcome-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>System_Welcome_Protocol.exe</span>
+          <div class="panel-icon">💻</div>
+        </div>
+        <div class="panel-body">
+          <h1 class="glitter">MY COOL PROJECT🚀</h1>
+          
+          <div class="gifs-row">
+            <img src="https://media.giphy.com/media/JUXGVpncYAU8NJ6BWz/giphy.gif" alt="Funny GIF" class="xp-3d-img">
+            <img src="https://media.giphy.com/media/l0MYEWpv7Ue0RFVaE/giphy.gif" alt="Fire" class="xp-3d-img">
+          </div>
+
+          <div class="welcome-links">
+            <p class="blink-text">👉 CLICK HERE TO HACK MY NETWORK <a href="https://github.com/ridanXD/" target="_blank" class="xp-luna-btn"> My Github </a> </p>
+            <h3> MY CURRICULUM VITAE IS <a href="#" onclick="alert('ERROR: CV file eaten by BonziBuddy! Please send 10 cups of coffee to restore.'); return false;" class="xp-luna-btn"> HEREEEEE </a> </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>Hacker_Portfolio_Database.bin</span>
+          <div class="panel-icon">📁</div>
+        </div>
+        <div class="panel-body">
+          
+          <!-- ASCII Project -->
+          <div class="project-box">
+            <h3 class="project-title">1. ASCII TEXT GENERATOR 💥</h3>
+            <p>For detail <a href="https://github.com/ridanXD/ASCII-Text-Generator" target="_blank" class="link-glow">Click here</a></p>
+            <div class="ascii-tool xp-bevel-in">
+              <div class="tool-controls">
+                <input type="text" id="ascii-input" class="xp-input" value="HACKER" placeholder="Type words...">
+                <button id="ascii-btn" class="xp-luna-btn">Generate Art!</button>
+              </div>
+              <pre id="ascii-output">
+  _    _          _____ _  ________ _____  __  __          _   _ 
+ | |  | |   /\   / ____| |/ /  ____|  __ \|  \/  |   /\   | \ | |
+ | |__| |  /  \ | |    | ' /| |__  | |__) | \  / |  /  \  |  \| |
+ |  __  | / /\ \| |    |  < |  __| |  _  /| |\/| | / /\ \ | . ` |
+ | |  | |/ ____ \ |____| . \| |____| | \ \| |  | |/ ____ \| |\  |
+ |_|  |_/_/    \_\_____|_|\_\______|_|  \_\_|  |_/_/    \_\_| \_|
+                                                                 
+              </pre>
+            </div>
+          </div>
+
+          <hr class="xp-divider">
+
+          <!-- LMS KIR Project -->
+          <div class="project-box">
+            <h3 class="project-title">2. LMS KIR [COMING SOON] 📚</h3>
+            <p>For detail <a href="#" onclick="alert('LMS KIR is currently under development. Stay tuned!'); return false;" class="link-glow">COMING SOON :p</a></p>
+            <div class="construction-zone xp-bevel-in" style="flex-direction: column; text-align: center; gap: 8px;">
+              <img src="https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif" alt="Coming Soon GIF" class="xp-3d-img" style="max-width: 180px; margin: 5px auto; display: block;">
+              <p class="blink" style="color: darkorange; font-weight: bold; font-size: 18px; margin: 5px 0;">🚧 LMS KIR COMING SOON 🚧</p>
+              <p style="margin: 0 0 10px 0;">This learning management system is currently under development. Please check back later!</p>
+            </div>
+          </div>
+
+          <hr class="xp-divider">
+
+          <!-- Math Tool Project -->
+          <div class="project-box">
+            <h3 class="project-title">3. Discrete Math Tools 🧮</h3>
+            <p>For detail <a href="https://github.com/ridanXD/DiscreteTOOLz" target="_blank" class="link-glow">Click Here</a></p>
+            <div class="math-tool xp-bevel-in">
+              <div class="math-controls">
+                <p>Calculate probability of finding a girlfriend:</p>
+                <button id="calc-gf-btn" class="xp-luna-btn">Calculate Girlfriend Prob</button>
+                <br><br>
+                <p>Calculate years remaining until graduation:</p>
+                <button id="calc-grad-btn" class="xp-luna-btn">Calculate Graduation ETA</button>
+              </div>
+              <div id="gf-result" class="blink-fast" style="margin-top: 15px; font-weight: bold; color: magenta; font-size: 15px;"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Photography Gallery Section -->
+      <section id="gallery-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>Camera_Raw_Dump.bmp</span>
+          <div class="panel-icon">🖼️</div>
+        </div>
+        <div class="panel-body">
+          <h2>LET SEE MY GALLERY IN HERE</h2>
+          <div class="gallery-quote xp-bevel-in">
+            <p>"OK I NEED A GOOD MOOD TO DO THIS PLS GET A F*K UP I WANNA GOING TO CAMPUSS FOR NOW"</p>
+          </div>
+          
+          <!-- ABSURD PHOTO GALLERY GRID -->
+          <div class="gallery-grid">
+            <div class="photo-card xp-bevel-out">
+              <div class="photo-placeholder">🍜</div>
+              <div class="photo-caption">Indomie - 3 AM Fuel</div>
+            </div>
+            <div class="photo-card xp-bevel-out">
+              <div class="photo-placeholder">🛌</div>
+              <div class="photo-caption">Main Server Core (My Bed)</div>
+            </div>
+            <div class="photo-card xp-bevel-out">
+              <div class="photo-placeholder">⛈️</div>
+              <div class="photo-caption">Current Mental Forecast</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notepad / Status Message Section -->
+      <section id="notepad-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>Angsty_Teen_Thoughts.txt - Notepad</span>
+          <div class="panel-icon">✏️</div>
+        </div>
+        <div class="panel-body no-padding">
+          <div class="notepad-toolbar">
+            <button class="xp-bevel-btn" id="notepad-autocringe" style="font-size: 11px; padding: 2px 8px;">🔥 Auto-Cringe</button>
+            <button class="xp-bevel-btn" id="notepad-clear" style="font-size: 11px; padding: 2px 8px;">🗑️ Clear Paper</button>
+          </div>
+          <textarea id="notepad-textarea">ok, i will write a code more(if my mood all good)
+
+(Feel free to delete my complaints and write your own notes, they will save in localStorage!)</textarea>
+        </div>
+      </section>
+
+      <!-- Guestbook / Hacker Console Section -->
+      <section id="guestbook-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>Command_Line_Guestbook.bat</span>
+          <div class="panel-icon">💻</div>
+        </div>
+        <div class="panel-body">
+          <p>Leave a message in the MS-DOS Guestbook or type random keys to look like a pro hacker!</p>
+          <div class="terminal-container xp-bevel-in">
+            <div class="terminal-body">
+              <p>Microsoft(R) Windows XP [Version 5.1.2600]</p>
+              <p>(C) Copyright 1985-2001 Microsoft Corp.</p>
+              <p style="color: cyan;">Type 'help' to see guestbook commands.</p>
+              <div id="terminal-history"></div>
+              <div class="terminal-input-line">
+                <span>C:\GUESTBOOK></span>
+                <input type="text" id="terminal-cmd" autocomplete="off" placeholder="Type here...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cup Holder Widget (Bonus absurd tool) -->
+      <section id="utility-sec" class="xp-panel">
+        <div class="panel-header glossy-3d-blue">
+          <span>Secret_Hardware_Exploit.exe</span>
+          <div class="panel-icon">⚙️</div>
+        </div>
+        <div class="panel-body text-center">
+          <h3>Need Coffee or Indomie Platform? ☕</h3>
+          <p>Eject your computer's CD-ROM tray to use as an official coffee mug stand.</p>
+          <button class="xp-luna-btn" onclick="openCdTray()">Open Cup Holder Tray</button>
+        </div>
+      </section>
+
+    </main>
+
+  </div> <!-- End Page Container -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="xp-footer">
+    <div class="footer-marquee">
+      <marquee direction="left" scrollamount="8">WANNA DONATE? CLICK <a href="#" onclick="alert('DONATE ERROR: System cannot process money. Send raw Indomie packets to RidanXD instead.'); return false;">HERE</a> TO SEND INSTANT INDOMIE PACKS</marquee>
+    </div>
+    <div class="footer-bottom">
+      <marquee direction="right" scrollamount="5">🔥🔥🔥 EXTREME SPAGHETTI WEB DEVELOPMENT 2001 // MOST COOL PROJECT EVERYTIME 🔥🔥🔥</marquee>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
