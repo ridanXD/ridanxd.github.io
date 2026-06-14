@@ -1,4 +1,4 @@
-/* ================= GENERAL RETRO RULES ================= */
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body, html {
   background-size: cover;
 }
 
-/* Custom Windows-style scrollbars */
+
 ::-webkit-scrollbar {
   width: 16px;
   height: 16px;
@@ -38,7 +38,7 @@ body, html {
   border-color: #ffffff #808080 #808080 #ffffff;
 }
 
-/* ================= 3D BEVEL UTILITIES ================= */
+
 .xp-bevel-out {
   border: 3.5px solid;
   border-color: #ffffff #7f7f7f #7f7f7f #ffffff;
@@ -65,7 +65,7 @@ body, html {
   box-shadow: none;
 }
 
-/* ================= DEEP GLOSSY 3D BLUE LUNA EFFECTS ================= */
+
 .glossy-3d-blue {
   background: linear-gradient(to bottom, 
     #7cb0ff 0%, 
@@ -82,7 +82,7 @@ body, html {
   box-shadow: inset 1px 1.5px 3px rgba(255, 255, 255, 0.8), 2px 2.5px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Luna-style Blue Pill Buttons */
+
 .xp-luna-btn {
   background: linear-gradient(to bottom, 
     #a8d0ff 0%, 
@@ -112,7 +112,7 @@ body, html {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Luna Green Start Button */
+
 .xp-luna-green-btn {
   background: linear-gradient(to bottom, 
     #7cbd44 0%, 
@@ -145,7 +145,7 @@ body, html {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Classic Inset Input Fields */
+
 .xp-input {
   border: 3.5px inset #7f7f7f;
   background: #ffffff;
@@ -158,7 +158,7 @@ body, html {
   box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-/* ================= HEADER BAR ================= */
+
 .xp-header-bar {
   color: #ffffff;
   padding: 0 20px;
@@ -193,10 +193,10 @@ body, html {
   text-shadow: 1px 1px 2px red;
 }
 
-/* ================= LAYOUT CONTAINER ================= */
+
 .page-container {
   display: flex;
-  margin: 72px auto 82px auto; /* Margin for header & footer */
+  margin: 72px auto 82px auto; 
   width: 95%;
   max-width: 1100px;
   gap: 20px;
@@ -204,12 +204,12 @@ body, html {
   transition: all 0.3s ease;
 }
 
-/* Collapsed Sidebar Mode (Desktop Toggle) */
+
 .page-container.sidebar-collapsed .sidebar {
   display: none !important;
 }
 
-/* Sidebar Widgets */
+
 .sidebar {
   width: 290px;
   display: flex;
@@ -219,7 +219,7 @@ body, html {
   transition: all 0.3s ease;
 }
 
-/* Main Content area */
+
 .main-content {
   flex: 1;
   display: flex;
@@ -227,7 +227,7 @@ body, html {
   gap: 22px;
 }
 
-/* ================= XP GROUP BOX & PANELS ================= */
+
 .xp-group-box {
   border: 3px solid;
   border-color: #ffffff #7f7f7f #7f7f7f #ffffff;
@@ -250,7 +250,7 @@ body, html {
   padding: 12px;
 }
 
-/* Sidebar Navigation shortcuts */
+
 .navigation-links {
   display: flex;
   flex-direction: column;
@@ -267,7 +267,7 @@ body, html {
   color: #000;
 }
 
-/* Main Content Panels */
+
 .xp-panel {
   background: #ece9d8;
   border: 4px solid #0050e0;
@@ -301,9 +301,9 @@ body, html {
   margin: 18px 0;
 }
 
-/* ================= SIDEBAR WIDGET CONTENTS ================= */
 
-/* Profile info */
+
+
 .avatar-frame {
   font-size: 48px;
   background: #fff;
@@ -328,7 +328,7 @@ body, html {
   text-align: center;
 }
 
-/* Stats dashboard values */
+
 .stats-dashboard {
   font-family: 'Courier Prime', monospace;
   font-size: 12px;
@@ -350,7 +350,7 @@ body, html {
 .text-yellow { color: #808000; }
 .text-blue { color: #0000cc; }
 
-/* Winamp Classic Skin style */
+
 .winamp-theme {
   background: #1c1c1f;
   color: #00ff00;
@@ -416,7 +416,7 @@ body, html {
   accent-color: #00ff00;
 }
 
-/* Tamagotchi Pet */
+
 .pet-widget {
   display: flex;
   flex-direction: column;
@@ -487,7 +487,7 @@ body, html {
   to { transform: translateY(-5px); }
 }
 
-/* Visitor Counter */
+
 .visitor-counter {
   background: #000000;
   border: 3px inset #7f7f7f;
@@ -505,7 +505,7 @@ body, html {
   border: 1px solid #333;
 }
 
-/* 3D Web Badges */
+
 .badges-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -544,9 +544,9 @@ body, html {
   box-shadow: none;
 }
 
-/* ================= MAIN CONTENT PANELS ================= */
 
-/* Hero area Gifs */
+
+
 .gifs-row {
   display: flex;
   justify-content: center;
@@ -562,7 +562,7 @@ body, html {
   margin-top: 15px;
 }
 
-/* Project Cards */
+
 .project-box {
   padding: 5px;
 }
@@ -600,7 +600,7 @@ body, html {
   border: 3.5px inset #7f7f7f;
 }
 
-/* Construction zone */
+
 .construction-zone {
   display: flex;
   align-items: center;
@@ -615,7 +615,7 @@ body, html {
   font-size: 32px;
 }
 
-/* Math tool content */
+
 .math-tool {
   padding: 15px;
 }
@@ -626,7 +626,7 @@ body, html {
   align-items: flex-start;
 }
 
-/* Gallery Section */
+
 .gallery-quote {
   padding: 10px 15px;
   font-style: italic;
@@ -665,7 +665,7 @@ body, html {
   color: #002c61;
 }
 
-/* Notepad / Textarea */
+
 .notepad-toolbar {
   background: #ece9d8;
   border-bottom: 1.5px solid #808080;
@@ -686,7 +686,7 @@ body, html {
   color: #000000;
 }
 
-/* Guestbook DOS Console */
+
 .terminal-container {
   padding: 2px;
   background: #000;
@@ -719,7 +719,7 @@ body, html {
   flex: 1;
 }
 
-/* ================= FOOTER ================= */
+
 .xp-footer {
   position: fixed;
   bottom: 0;
@@ -750,7 +750,7 @@ body, html {
   font-weight: bold;
 }
 
-/* ================= RETRO TEXT STYLE ACTIONS ================= */
+
 .glitter {
   background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta);
   -webkit-background-clip: text;
@@ -794,7 +794,7 @@ body, html {
   100% { text-shadow: 1px -1px 0px yellow; }
 }
 
-/* ================= RESPONSIVE MEDIA QUERIES (MOBILE RULES) ================= */
+
 @media (max-width: 768px) {
   .page-container {
     flex-direction: column;
@@ -803,12 +803,10 @@ body, html {
     width: 96%;
     gap: 15px;
   }
-  
-  /* Sidebar becomes collapsible sliding drawer on mobile */
   .sidebar {
     position: fixed;
     top: 52px;
-    left: -310px; /* Hidden offscreen left */
+    left: -310px; 
     height: calc(100vh - 106px);
     width: 290px;
     z-index: 1005;
@@ -820,12 +818,9 @@ body, html {
     overflow-y: auto;
     transition: left 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
   }
-  
-  /* Slide in drawer when open */
   .sidebar.open {
     left: 0 !important;
   }
-  
   .main-content {
     width: 100%;
   }
@@ -833,31 +828,25 @@ body, html {
   .xp-header-bar {
     padding: 0 10px;
   }
-  
   .header-ticker {
-    display: none; /* Hide ticker on small mobile to save space */
+    display: none; 
   }
 
-  /* Scale down the ASCII art container so it fits small displays */
   #ascii-output {
     font-size: 7px !important;
     padding: 6px;
   }
-  
   .tool-controls {
     flex-direction: column;
     gap: 6px;
   }
-  
   .gifs-row {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
   .xp-3d-img {
     max-width: 45%;
   }
-  
   .gallery-grid {
     grid-template-columns: 1fr;
   }
